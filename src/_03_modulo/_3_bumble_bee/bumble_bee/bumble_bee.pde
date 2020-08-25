@@ -18,12 +18,12 @@ Use modulo to make the colors alternate between yellow and black
 for (int i=0; i<23; i++) {
   if (i%2==1) {
     fill(#FEFF00);
-    ellipse(20*i,20*i,50,50);
+
   }
   else {
         fill(#030303);
-    ellipse(20*i,20*i,50,50);
   }
+      ellipse(20*i,20*i,50,50);
 }
 
 /*

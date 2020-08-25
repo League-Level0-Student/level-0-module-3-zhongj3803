@@ -10,9 +10,10 @@ public class RobotColorChooser {
 
 		// 1. Create a new Robot
 		Robot rob = new Robot();
+		String colorPen = "";
 		// 2. Make the robot draw a shape (this will take more than one line of code)
-		for (;;) {
-			String colorPen = JOptionPane.showInputDialog("What color would you like the robot to draw with?");
+		while (!colorPen .equals ("exit")) {
+			colorPen = JOptionPane.showInputDialog("What color would you like the robot to draw with?");
 			if (colorPen.equals("red")) {
 				rob.setPenColor(Color.red);
 			} else if (colorPen.equals("orange")) {
